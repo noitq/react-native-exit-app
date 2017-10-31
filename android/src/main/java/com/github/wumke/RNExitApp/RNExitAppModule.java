@@ -34,6 +34,15 @@ public class RNExitAppModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void exitApp() {
-        android.os.Process.killProcess(android.os.Process.myPid());
+        // this way remain instance in "recent app" after calling this function
+        // android.os.Process.killProcess(android.os.Process.myPid());
+
+        // this way clear instance in "recent app" after calling this function
+        if(android.os.Build.VERSION.SDK_INT >= 21){
+                getCurrentActivity().finishAndRemoveTask();
+        }
+        else{
+            getCurrentActivity().finish();
+        }
     }
 }
