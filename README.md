@@ -9,8 +9,8 @@ NOTICE:
 
 Fast and easy:
 ```bash
-npm install react-native-exit-app --save
-react-native link react-native-exit-app
+npm install react-native-exit-app-no-history --save
+react-native link react-native-exit-app-no-history
 ```
 
 Or manual: add the latest version as dependeny to your package.json.
@@ -22,7 +22,7 @@ Or manual: add the latest version as dependeny to your package.json.
   },
   "dependencies": {
     ...
-    "react-native-exit-app": "0.1.0",
+    "react-native-exit-app-no-history": "0.1.0",
     ...
   }
 ```
@@ -35,12 +35,12 @@ Or manual: add the latest version as dependeny to your package.json.
 #### Android
 * In the settings.gradle
   ```
-    include ':react-native-exit-app', ':app'
-    project(':react-native-exit-app').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app/android')
+    include ':react-native-exit-app-no-history', ':app'
+    project(':react-native-exit-app-no-history').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-exit-app-no-history/android')
   ```
 * In the build.gradle
   ```
-    compile project(':react-native-exit-app')
+    compile project(':react-native-exit-app-no-history')
   ```
 * In MainApplication.java
   ```
@@ -59,7 +59,7 @@ Or manual: add the latest version as dependeny to your package.json.
 ## Usage
 
 ```javascript
-import RNExitApp from 'react-native-exit-app';
+import RNExitApp from 'react-native-exit-app-no-history';
 ...
 RNExitApp.exitApp();
 ...
