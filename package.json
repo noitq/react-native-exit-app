@@ -1,5 +1,5 @@
 {
-  "name": "react-native-exit-app",
+  "name": "react-native-exit-app-no-history",
   "version": "1.0.0",
   "description": "Exit,close,kill,shutdown app completely for React Native on iOS and Android.",
   "main": "index.js",
@@ -23,7 +23,7 @@
   "author": "Wumke",
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/wumke/react-native-exit-app/issues"
+    "url": "https://github.com/noitq/react-native-exit-app/issues"
   },
-  "homepage": "http://watchwimswork.be"
+  "homepage": "http://developerkeep.com"
 }
